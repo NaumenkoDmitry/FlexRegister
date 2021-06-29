@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <article class="main">
+    <header class="header">
+      <h1><section class="section"></section>Register<section class="section"></section></h1>
+      <p>Create your account. it`s free and only takes a minute</p>
+    </header>
+    <form action="/" method="get" class="form">
+      <input 
+      class="input firstname-lastname" 
+      required 
+      id="firstname" 
+      type="text" 
+      autofocus 
+      name="firstname" 
+      placeholder="First Name" 
+      pattern="^[A-Z][a-z]{1,32}$"/>
+      <input 
+      class="input firstname-lastname"
+      required id="lastname" 
+      type="text" 
+      autofocus 
+      name="lastname" 
+      placeholder="Last Name"
+      pattern="^[A-Z][a-z]{1,32}$"/>
+      <input 
+      class="input inp-last"
+      required
+      id="email"
+      type="email"
+      name="email"
+      placeholder="email"
+      pattern="^[a-zA-Z0-9]{1,16}@[a-z]{1,9}\.[a-z]{1,4}$"
+      />
+      <input 
+      class="input inp-last" 
+      id="password" 
+      type="password" 
+      name="password" 
+      required 
+      placeholder="Password"
+      pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{6,32"/>
+      <input 
+      class="input inp-last" 
+      id="password" 
+      type="password" 
+      name="password" 
+      required 
+      placeholder="Confirm Password"
+      pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{6,32"/>
+      <label for="" class="checkbox">
+        <input 
+        required 
+        id="checkbox" 
+        type="checkbox"
+        name="checkbox" />I accept the Terms of Use & Privacy Policy
+      </label>
+      <input class="btn" type="submit">
+    </form>
+  </article>
+  </body>
+</html>
